@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 1%;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #bf5712;
+}
+
+.intro {
+  text-align: center;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.learn-more {
+  background-color: #d35400;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 70vh;
+}
+
+#recipe_list {
+  width: 60vw;
+}
+
+.recipe {
+  padding: 10px;
+  font-size: 4vh;
+  height: 9vh;
+}
+
+.drum_media {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px; 
+}
+
+.drum {
+  animation-name: beat;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: center bottom; 
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+
