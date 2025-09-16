@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const storyImage = document.querySelector(".story-image");
   const tooltip = document.querySelector(".tooltip");
   const reaction = document.querySelector(".reaction");
+  const hint = document.querySelector(".hint");
 
   const images = ["1.png", "2.png", "3.png"];
   const bgColors = ["#f2f2f2", "#ffe6cc", "#e6f7ff"];
@@ -21,12 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (index === 0) {
       storyImage.classList.add("enlarge");
+      hint.style.display = "block";
     } else if (index === 1) {
       tooltip.classList.remove("hidden");
       tooltip.classList.add("show-tooltip");
+      hint.style.display = "block";
     } else if (index === 2) {
       reaction.classList.remove("hidden");
       reaction.classList.add("show-reaction");
+      hint.style.display = "none";
     }
   });
 });
